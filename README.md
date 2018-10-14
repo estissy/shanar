@@ -25,7 +25,7 @@ Project contains 4 Python scripts:
 So, we have historical prices for currency. We want to feed our network with "time lags" for every selected price. Time lags are just previous prices or in general some number of historical values. Number of time lags is selected (in this project it is 14). Time lags can be in context of hour, day, year, etc. (in this project it is day, it depend of data you have). The input to the network is 14 ordered prices (prices from last 14 days) and the output is next price (price in day 15). Used network is recurrent. This type of network is specified for forecasting, trend finding and processing sequential data because they remember some of previous states and use it to calculate current output.
 
 ## Parameters
-Parameters for network are stored in core.py file.
+Parameters for network are stored in `core.py` file.
 
 __General parameters__
 * `model_name`
@@ -55,7 +55,7 @@ __Model parameters__
     
 * `optimizer`
 
-    Optimzer used during training process.
+    Optimizer used during training process.
     
 * `batch_size`
 
